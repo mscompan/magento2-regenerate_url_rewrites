@@ -132,7 +132,6 @@ abstract class AbstractRegenerateRewrites
                 ['target_path', 'request_path', 'metadata', 'redirect_type']
             );
             $this->_getResourceConnection()->getConnection()->commit();
-
         } catch (\Exception $e) {
             $this->_getResourceConnection()->getConnection()->rollBack();
             throw $e;
